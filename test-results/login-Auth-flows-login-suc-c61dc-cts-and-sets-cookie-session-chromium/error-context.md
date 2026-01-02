@@ -1,20 +1,87 @@
 # Page snapshot
 
 ```yaml
-- generic [active] [ref=e1]:
-  - generic [ref=e6] [cursor=pointer]:
-    - button "Open Next.js Dev Tools" [ref=e7]:
-      - img [ref=e8]
-    - generic [ref=e11]:
-      - button "Open issues overlay" [ref=e12]:
-        - generic [ref=e13]:
-          - generic [ref=e14]: "0"
-          - generic [ref=e15]: "1"
-        - generic [ref=e16]: Issue
-      - button "Collapse issues badge" [ref=e17]:
-        - img [ref=e18]
-  - main [ref=e20]:
-    - heading "Login" [level=1] [ref=e21]
-    - paragraph [ref=e22]: Placeholder login page (no functionality implemented yet).
-  - alert [ref=e23]
+- generic:
+  - generic [active]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - navigation [ref=e6]:
+            - button "previous" [disabled] [ref=e7]:
+              - img "previous" [ref=e8]
+            - generic [ref=e10]:
+              - generic [ref=e11]: 1/
+              - text: "1"
+            - button "next" [disabled] [ref=e12]:
+              - img "next" [ref=e13]
+          - img
+        - generic [ref=e15]:
+          - generic [ref=e16]:
+            - img [ref=e17]
+            - generic "Latest available version is detected (16.1.1)." [ref=e19]: Next.js 16.1.1
+            - generic [ref=e20]: Turbopack
+          - img
+      - dialog "Build Error" [ref=e22]:
+        - generic [ref=e25]:
+          - generic [ref=e26]:
+            - generic [ref=e27]:
+              - generic [ref=e29]: Build Error
+              - generic [ref=e30]:
+                - button "Copy Error Info" [ref=e31] [cursor=pointer]:
+                  - img [ref=e32]
+                - link "Go to related documentation" [ref=e34] [cursor=pointer]:
+                  - /url: https://nextjs.org/docs/app/building-your-application/rendering
+                  - img [ref=e35]
+                - button "Attach Node.js inspector" [ref=e37] [cursor=pointer]:
+                  - img [ref=e38]
+            - generic [ref=e47]: Ecmascript file had an error
+          - generic [ref=e49]:
+            - generic [ref=e51]:
+              - img [ref=e53]
+              - generic [ref=e56]: ./app/providers/ThemeRegistry.tsx (4:1)
+              - button "Open in editor" [ref=e57] [cursor=pointer]:
+                - img [ref=e59]
+            - generic [ref=e62]:
+              - generic [ref=e63]: Ecmascript file had an error
+              - generic [ref=e64]: 2 |
+              - text: import
+              - generic [ref=e65]: "{"
+              - text: CacheProvider
+              - generic [ref=e66]: "}"
+              - text: from '@emotion/react';
+              - generic [ref=e67]: 3 |
+              - text: import
+              - generic [ref=e68]: createEmotionServer
+              - text: from '@emotion/server/create-instance'; >
+              - generic [ref=e69]: 4 |
+              - text: import
+              - generic [ref=e70]: "{ renderToString }"
+              - text: from 'react-dom/server';
+              - generic [ref=e71]: "|"
+              - text: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              - generic [ref=e72]: 5 |
+              - text: import
+              - generic [ref=e73]: "{ useServerInsertedHTML }"
+              - text: from 'next/navigation';
+              - generic [ref=e74]: 6 |
+              - text: import
+              - generic [ref=e75]: createEmotionCache
+              - text: from '../../lib/createEmotionCache';
+              - generic [ref=e76]: 7 |
+              - generic [ref=e77]:
+                - text: "You're importing a component that imports react-dom/server. To fix it, render or return the content directly as a Server Component instead for perf and security. Learn more:"
+                - link "https://nextjs.org/docs/app/building-your-application/rendering" [ref=e78] [cursor=pointer]:
+                  - /url: https://nextjs.org/docs/app/building-your-application/rendering
+                - text: "Import trace: Server Component: ./app/providers/ThemeRegistry.tsx ./app/layout.tsx"
+        - generic [ref=e79]: "1"
+        - generic [ref=e80]: "2"
+    - generic [ref=e85] [cursor=pointer]:
+      - button "Open Next.js Dev Tools" [ref=e86]:
+        - img [ref=e87]
+      - button "Open issues overlay" [ref=e91]:
+        - generic [ref=e92]:
+          - generic [ref=e93]: "0"
+          - generic [ref=e94]: "1"
+        - generic [ref=e95]: Issue
+  - alert [ref=e96]
 ```
