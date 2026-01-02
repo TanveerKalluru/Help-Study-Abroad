@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test:e2e": "playwright test --project=chromium"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -22,5 +23,8 @@
     "react-dom": "^19.2.3",
     "typescript": "^5.9.3",
     "zustand": "^5.0.9"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.57.0"
   }
 }
