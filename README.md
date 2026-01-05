@@ -1,4 +1,4 @@
-# Help-Study-Abroa
+# Help-Study-Abroad
 
 This repository contains a scaffolded Next.js 13+ project using the App Router and TypeScript.
 
